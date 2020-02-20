@@ -2,18 +2,11 @@ version: '3.0'
 
 services:
   token: 
-    container_name: vsurwshe
-    image: vsurwshe/company
+    container_name: sms-gateway
+    image: v2018y/sms-gateway
     ports:
-      - 8761:8761 
-      - 7000:7000
-      - 7001:7001
-      - 7002:7002
-      - 7003:7003
-      - 7004:7004
       - 7005:7005
     networks:
-      - vanynet 
-
+      - vanySMSNet 
 networks: 
-  vanynet:
+  vanySMSNet:
